@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-这是一个面向国家税务总局临城县税务局的系列情景剧宣传网页项目，采用 React + TypeScript 构建，模拟微信公众号文章风格，提供税务宣传内容的展示功能。
+这是一个系列情景剧宣传网页项目，采用 React + TypeScript 构建，模拟微信公众号文章风格，提供税务宣传内容的展示功能。
 
 ## 目录结构
 
@@ -14,9 +14,7 @@
 │   ├── hooks/        # 自定义钩子
 │   └── lib/          # 工具函数
 ├── index.html        # HTML 入口文件
-├── package.json      # 项目配置和依赖
-├── DEPLOYMENT_GUIDE_MAC.md  # Mac 部署指南
-└── PROJECT_STRUCTURE.md     # 项目结构说明
+└── package.json      # 项目配置和依赖
 ```
 
 ## 快速开始
@@ -29,13 +27,13 @@
 ### 安装依赖
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 开发模式运行
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 项目将在 http://localhost:3000 启动开发服务器
@@ -46,24 +44,7 @@ npm run dev
 npm run build
 ```
 
-构建后的文件将位于 `dist` 目录中
-
-## 部署方式
-
-### 本地开发部署
-
-请参考项目根目录下的 `DEPLOYMENT_GUIDE_MAC.md` 文件，获取在 Mac 系统上部署 npm 服务器的详细指南。
-
-### 服务器部署选项
-
-1. **使用静态文件服务器**
-   - 构建项目后，使用任何静态文件服务器托管 `dist` 目录
-
-2. **使用 Node.js 服务器**
-   - 可以使用 Express 等框架创建简单的 Web 服务器
-
-3. **云服务部署**
-   - 支持 Vercel、Netlify、GitHub Pages 等平台一键部署
+构建后的文件将位于 `dist/static` 目录中
 
 ## 微信公众号集成
 
@@ -97,7 +78,3 @@ npm run build
 1. 项目中的图片使用了生成服务，请确保网络连接正常
 2. 在微信环境中使用时，可能需要进行微信公众号的相关配置
 3. 如需修改项目配置，请参考相关配置文件
-
-## 版权信息
-
-© 2025 国家税务总局临城县税务局 版权所有
