@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>国家税务总局临城县税务局 - 系列情景剧</title>
+    
+    <!-- 微信分享元数据 -->
+    <meta name="description" content="国家税务总局临城县税务局系列情景剧'演'活规范执法'视'效宣传展示" />
+    <meta name="keywords" content="税务,执法,情景剧,宣传" />
+    
+    <!-- 微信开放标签所需元数据 -->
+    <meta property="og:title" content="国家税务总局临城县税务局 - 系列情景剧" />
+    <meta property="og:description" content="创新普法形式，提升执法水平" />
+    <meta property="og:image" content="https://space.coze.cn/api/coze_space/gen_image?image_size=square&prompt=Tax%20Office%20Building%2C%20blue%20background%2C%20official%20logo&sign=ac79cec4f92ed7abdf72304f4918de5f" />
+    <meta property="og:url" content="" />
+    
+    <!-- 引入微信公众号文章样式 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    
+    <!-- 优化微信环境下的样式 -->
+    <style>
+      /* 全局样式优化，更贴近微信公众号 */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: 100%;
+      }
+      
+      /* 文章内容样式优化 */
+      .prose {
+        max-width: 100%;
+        color: #333;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+      
+      .prose p {
+        margin-bottom: 1em;
+        text-align: justify;
+      }
+      
+      .prose h2 {
+        margin-top: 1.5em;
+        margin-bottom: 0.75em;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+      
+      .prose h3 {
+        margin-top: 1.25em;
+        margin-bottom: 0.625em;
+        font-weight: 600;
+        color: #2a2a2a;
+      }
+      
+      /* 图片样式优化 */
+      .prose img {
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      /* 链接样式 */
+      .prose a {
+        color: #07c160;
+        text-decoration: none;
+      }
+      
+      /* 微信环境特定样式 */
+      .wx-context {
+        position: relative;
+      }
+       
+      /* 适配深色模式 - 优化版 */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1a1a1a;
+          color: #f0f0f0;
+        }
+        
+        .prose {
+          color: #f0f0f0;
+        }
+        
+        .prose h2, .prose h3 {
+          color: #ffffff;
+        }
+        
+        .prose p {
+          color: #e0e0e0;
+        }
+        
+        .prose a {
+          color: #4dd0e1;
+        }
+        
+        .bg-white {
+          background-color: #2d2d2d !important;
+        }
+        
+        .bg-gray-50 {
+          background-color: #1e1e1e !important;
+        }
+        
+        .text-gray-700 {
+          color: #e0e0e0 !important;
+        }
+        
+        .text-gray-600 {
+          color: #d0d0d0 !important;
+        }
+        
+        .text-gray-500 {
+          color: #b0b0b0 !important;
+        }
+        
+        .shadow-sm {
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+        }
+        
+        /* 按钮在深色模式下的适配 */
+        .bg-blue-50 {
+          background-color: #1565c0 !important;
+        }
+        
+        .bg-gray-100 {
+          background-color: #333333 !important;
+        }
+        
+        /* 微信公众号风格的导航栏 */
+        header {
+          background-color: #2d2d2d !important;
+          border-bottom-color: #444444 !important;
+        }
+        
+        /* 确保文本颜色在深色模式下可读性 */
+        header .text-gray-700,
+        header .text-gray-900 {
+          color: #f0f0f0 !important;
+        }
+        
+        /* 主要内容区域背景 */
+        main {
+          background-color: #2d2d2d !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- 微信环境检测与适配脚本 -->
+    <script>
+      // 检测是否在微信环境中
+      function isWeChatBrowser() {
+        var userAgent = navigator.userAgent.toLowerCase();
+        return /micromessenger/.test(userAgent);
+      }
+      
+      // 如果在微信环境中，可以添加一些特殊处理
+      if (isWeChatBrowser()) {
+        document.addEventListener('DOMContentLoaded', function() {
+          console.log('正在微信环境中浏览');
+          
+          // 添加微信环境类，便于CSS针对微信环境进行样式调整
+          document.body.classList.add('wx-context');
+          
+          // 微信浏览器中禁用长按图片保存
+          document.querySelectorAll('img').forEach(img => {
+            img.oncontextmenu = function() { return false; };
+          });
+        });
+      }
+      
+       // 优化移动端滑动体验
+      document.addEventListener('touchmove', function(e) {
+        // 不再阻止默认的滑动行为，确保用户可以正常滑动页面
+      }, { passive: true });
+      
+      // 隐藏页面滚动条但保留滚动功能（微信公众号风格）
+      document.documentElement.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';
+    </script>
+  </body>
+</html>
