@@ -190,7 +190,7 @@ export default function TaxPromotionPage() {
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm flex items-center justify-center overflow-hidden">
                 {/* 模拟微信公众号中的图片样式 */}
                 <img
-                  src="/src/pic/1.png"
+                  src="/src/pic/1.jpg"
                   alt="第一期片段截取"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
@@ -218,7 +218,7 @@ export default function TaxPromotionPage() {
             <div className="mt-6">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm overflow-hidden">
                 <img
-                  src="/src/pic/2.png"
+                  src="/src/pic/2.jpg"
                   alt="情景剧片段截取"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
