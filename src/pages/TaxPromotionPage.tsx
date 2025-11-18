@@ -21,14 +21,14 @@ export default function TaxPromotionPage() {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section[id]');
       let currentActiveSection = 'cover';
-      
+
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
         if (sectionTop <= 100) {
           currentActiveSection = section.id;
         }
       });
-      
+
       setActiveSection(currentActiveSection);
       setShowBackToTop(window.scrollY > 300);
     };
@@ -75,8 +75,8 @@ export default function TaxPromotionPage() {
             </div>
             <h3 className="text-lg">国家税务总局临城县税务局</h3>
           </div>
-          
-          <motion.h1 
+
+          <motion.h1
             className="text-4xl md:text-5xl font-bold mb-6 text-center px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -84,8 +84,8 @@ export default function TaxPromotionPage() {
           >
             系列情景剧
           </motion.h1>
-          
-          <motion.h2 
+
+          <motion.h2
             className="text-2xl md:text-3xl font-bold mb-10 text-center px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,15 +93,15 @@ export default function TaxPromotionPage() {
           >
             "演"活规范执法"视"效
           </motion.h2>
-          
-          <motion.div 
+
+          <motion.div
             className="w-24 h-1 bg-blue-300 mb-10"
             initial={{ width: 0 }}
             animate={{ width: '6rem' }}
             transition={{ duration: 1, delay: 0.4 }}
           />
-          
-          <motion.p 
+
+          <motion.p
             className="text-lg text-center px-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -121,7 +121,7 @@ export default function TaxPromotionPage() {
             <h2 className="text-3xl font-bold mb-3">目录</h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
           </div>
-          
+
           <div className="space-y-4">
             {[
               { id: 'background', title: '01 活动背景与目标' },
@@ -158,7 +158,7 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
+
           <div className="space-y-8">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="flex items-center mb-4">
@@ -172,7 +172,7 @@ export default function TaxPromotionPage() {
                 帮助税务干部廓清理解偏差和认识误区，准确掌握税费执法流程，规范执法语言与行为。
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
@@ -185,13 +185,13 @@ export default function TaxPromotionPage() {
                 丰富涉税矛盾处理经验。
               </p>
             </div>
-            
+
             <div className="mt-8 bg-gray-50 p-4 rounded-lg">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm flex items-center justify-center overflow-hidden">
                 {/* 模拟微信公众号中的图片样式 */}
-                <img 
-                  src="https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Tax%20office%20training%20scene%2C%20meeting%20room%2C%20people%20sitting%20in%20a%20conference%20room&sign=f902257fae98c2f34544a92fc1d1f3ae" 
-                  alt="第一期片段截取" 
+                <img
+                  src="/src/pic/1.png"
+                  alt="第一期片段截取"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
@@ -213,20 +213,20 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
-           <div className="space-y-8">
+
+          <div className="space-y-8">
             <div className="mt-6">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-                <img 
-                  src="https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Scenario%20drama%20rehearsal%20scene%2C%20actors%20performing%20in%20a%20meeting%20room&sign=b814e594e261c46138eaa22f1627c71b" 
-                  alt="情景剧片段截取" 
+                <img
+                  src="/src/pic/2.png"
+                  alt="情景剧片段截取"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <p className="text-center text-sm text-gray-500 mt-2">情景剧片段截取</p>
             </div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -241,8 +241,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -257,8 +257,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -289,9 +289,9 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
+
           <div className="space-y-8">
-            <motion.div 
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -306,8 +306,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -322,8 +322,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -338,12 +338,12 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-             <div className="mt-6">
+
+            <div className="mt-6">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-                <img 
-                  src="https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Rehearsal%20scene%20of%20a%20drama%2C%20two%20women%20performing%20in%20an%20office&sign=afe35bebf7f026e64b2b26ca2650c302" 
-                  alt="彩排现场" 
+                <img
+                  src="../src/pic/3.png"
+                  alt="彩排现场"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
@@ -365,20 +365,20 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
+
           <div className="space-y-8">
-             <div className="mt-6">
+            <div className="mt-6">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-                <img 
-                  src="https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Immersive%20performance%20scene%2C%20tax%20official%20talking%20with%20a%20citizen%20in%20an%20office&sign=4331d5f7e2bd84ff0f4dcc2c1593f311" 
-                  alt="《社保费官司里的官司》" 
+                <img
+                  src="../src/pic/4.png"
+                  alt="《社保费官司里的官司》"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <p className="text-center text-sm text-gray-500 mt-2">《社保费官司里的"官司"》</p>
             </div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -393,8 +393,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -409,8 +409,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -441,9 +441,9 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
+
           <div className="space-y-8">
-            <motion.div 
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -458,8 +458,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -474,8 +474,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -490,12 +490,12 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-             <div className="mt-6">
+
+            <div className="mt-6">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-                <img 
-                  src="https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Practical%20training%20scene%2C%20tax%20officials%20practicing%20law%20enforcement%20procedures&sign=0f3e0a84f9790b0e29b85071914135a4" 
-                  alt="《豪车疑云》演练现场" 
+                <img
+                  src="../src/pic/5.png"
+                  alt="《豪车疑云》演练现场"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
@@ -517,19 +517,19 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
+
           <div className="space-y-8">
-             <div className="mt-6">
+            <div className="mt-6">
               <div className="aspect-video bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-                <img 
-                  src="https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Leadership%20commenting%20on%20a%20training%20session%2C%20man%20speaking%20at%20a%20meeting&sign=6fc15e0e117aa64a9f76b813f0c9d030" 
-                  alt="领导点评" 
+                <img
+                  src="../src/pic/6.png"
+                  alt="领导点评"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <p className="text-center text-sm text-gray-500 mt-2">领导点评</p>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center">
                 <i className="fas fa-chart-line text-blue-600 mr-2"></i>
@@ -541,14 +541,14 @@ export default function TaxPromotionPage() {
                 </p>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center">
                 <i className="fas fa-lightbulb text-blue-600 mr-2"></i>
                 创新价值
               </h3>
               <div className="space-y-3">
-                <motion.div 
+                <motion.div
                   className="p-4 bg-white rounded-lg shadow-sm"
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
@@ -557,8 +557,8 @@ export default function TaxPromotionPage() {
                     <span className="font-medium text-blue-700">形式创新：</span>以演代训，变被动接受为主动参与。
                   </p>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="p-4 bg-white rounded-lg shadow-sm"
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
@@ -567,8 +567,8 @@ export default function TaxPromotionPage() {
                     <span className="font-medium text-blue-700">内容创新：</span>我演我事，用身边人、身边事教育大家。
                   </p>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="p-4 bg-white rounded-lg shadow-sm"
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
@@ -579,51 +579,67 @@ export default function TaxPromotionPage() {
                 </motion.div>
               </div>
             </div>
-            
-            <div className="mt-10">
-              <h3 className="text-xl font-bold mb-6 text-center">活动精彩瞬间回顾</h3>
-              
-              <div className="space-y-6">
-                {[
-                  { 
-                    title: '编剧研讨', 
-                    desc: '编剧团队深入研讨剧本细节，力求剧情真实、贴近工作。',
-                    icon: 'book'
-                  },
-                  { 
-                    title: '角色彩排', 
-                    desc: '演员们全情投入，在彩排现场进行生动的角色互动与演绎。',
-                    icon: 'masks-theater'
-                  },
-                  { 
-                    title: '观众互动', 
-                    desc: '活动现场设置互动环节，邀请观众点评，气氛热烈。',
-                    icon: 'users'
-                  },
-                ].map((item, index) => (
-                  <motion.div 
-                    key={index}
-                    className="bg-white rounded-lg shadow-sm overflow-hidden"
-                    whileHover={{ y: -5 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                     <div className="h-48 overflow-hidden">
-                      <img 
-                        src={`https://space.coze.cn/api/coze_space/gen_image?image_size=square&prompt=${item.title === '编剧研讨' ? 'Script%20discussion%20meeting' : item.title === '角色彩排' ? 'Role%20rehearsal%20scene' : 'Audience%20interaction%20during%20performance'}`} 
-                        alt={item.title} 
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-5">
-                      <h4 className="text-lg font-semibold mb-2 text-center">{item.title}</h4>
-                      <p className="text-gray-700 text-center">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'review',
+      title: '活动精彩瞬间回顾',
+      content: (
+        <div className="w-full py-8 px-4">
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold mb-4 flex items-center">
+              <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm"></span>
+              活动精彩瞬间回顾
+            </h2>
+            <div className="ml-11 w-16 h-1 bg-blue-600"></div>
+          </div>
+          <div className="mt-10">
+
+            <h3 className="text-xl font-bold mb-6 text-center">活动精彩瞬间回顾</h3>
+
+            <div className="space-y-6">
+              {[
+                {
+                  title: '编剧研讨',
+                  desc: '编剧团队深入研讨剧本细节，力求剧情真实、贴近工作。',
+                  icon: 'book'
+                },
+                {
+                  title: '角色彩排',
+                  desc: '演员们全情投入，在彩排现场进行生动的角色互动与演绎。',
+                  icon: 'masks-theater'
+                },
+                {
+                  title: '观众互动',
+                  desc: '活动现场设置互动环节，邀请观众点评，气氛热烈。',
+                  icon: 'users'
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-white rounded-lg shadow-sm overflow-hidden"
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src={`../src/pic/${item.title === '编剧研讨' ? '7.png' : item.title === '角色彩排' ? '8.png' : '9.png'}`}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h4 className="text-lg font-semibold mb-2 text-center">{item.title}</h4>
+                    <p className="text-gray-700 text-center">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
+
       ),
     },
     {
@@ -637,9 +653,9 @@ export default function TaxPromotionPage() {
             </h2>
             <div className="ml-11 w-16 h-1 bg-blue-600"></div>
           </div>
-          
+
           <div className="space-y-8">
-            <motion.div 
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -656,8 +672,8 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-5 bg-white rounded-lg shadow-sm"
               whileHover={{ y: -3 }}
               transition={{ duration: 0.3 }}
@@ -675,10 +691,10 @@ export default function TaxPromotionPage() {
                 </div>
               </div>
             </motion.div>
-            
+
             <div className="mt-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl shadow-lg flex items-center justify-center p-8">
               <div className="text-center">
-                <motion.div 
+                <motion.div
                   className="w-36 h-36 mx-auto mb-6 relative"
                   initial={{ rotate: 0 }}
                   animate={{ rotate: 360 }}
@@ -689,7 +705,7 @@ export default function TaxPromotionPage() {
                     <div className="text-white text-4xl font-bold">LTX</div>
                   </div>
                 </motion.div>
-                <p className="text-white text-lg font-medium">税务普法特色品牌</p>
+                <p className="text-white text-lg font-medium">系列情景剧</p>
               </div>
             </div>
           </div>
@@ -704,7 +720,7 @@ export default function TaxPromotionPage() {
   const [showFloatToc, setShowFloatToc] = useState(false);
   // 内容容器引用
   const contentRef = useRef<HTMLDivElement>(null);
-  
+
   // 处理滚动事件，更新阅读进度
   useEffect(() => {
     const handleScroll = () => {
@@ -712,25 +728,25 @@ export default function TaxPromotionPage() {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
       const progress = (window.scrollY / totalHeight) * 100;
       setReadingProgress(progress);
-      
+
       // 当滚动到一定距离时显示悬浮目录
       if (window.scrollY > 500) {
         setShowFloatToc(true);
       } else {
         setShowFloatToc(false);
       }
-      
+
       // 原来的滚动逻辑
       const sections = document.querySelectorAll('section[id]');
       let currentActiveSection = 'cover';
-      
+
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
         if (sectionTop <= 100) {
           currentActiveSection = section.id;
         }
       });
-      
+
       setActiveSection(currentActiveSection);
       setShowBackToTop(window.scrollY > 300);
     };
@@ -742,31 +758,31 @@ export default function TaxPromotionPage() {
   return (
     <div className="bg-gray-50 min-h-screen" ref={contentRef}>
       {/* 阅读进度条 */}
-      <div 
+      <div
         className="fixed top-0 left-0 h-1 bg-blue-600 z-50 transition-all duration-150 ease-out"
         style={{ width: `${readingProgress}%` }}
       />
-      
+
       {/* 顶部导航栏 - 微信公众号风格 */}
       <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-40 border-b border-gray-100" style={{ marginTop: '4px' }}>
         <div className="flex items-center h-14 px-4">
-          <button 
-            onClick={goBack} 
+          <button
+            onClick={goBack}
             className="w-8 h-8 flex items-center justify-center text-gray-700"
           >
             <i className="fas fa-chevron-left"></i>
           </button>
           <div className="flex-1 text-center font-medium text-gray-900 truncate">
-            税务宣传文章
+            系列情景剧
           </div>
-          <button 
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="w-8 h-8 flex items-center justify-center text-gray-700"
           >
             <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-ellipsis-h'}`}></i>
           </button>
         </div>
-        
+
         {/* 移动端菜单 - 从底部弹出 */}
         {isMenuOpen && (
           <motion.div
@@ -788,8 +804,8 @@ export default function TaxPromotionPage() {
                     onClick={() => scrollToSection(section.id)}
                     className={cn(
                       "w-full text-left py-3 px-4 rounded-lg transition-colors duration-200",
-                      activeSection === section.id 
-                        ? "bg-blue-50 text-blue-600" 
+                      activeSection === section.id
+                        ? "bg-blue-50 text-blue-600"
                         : "text-gray-700 hover:bg-gray-50"
                     )}
                   >
@@ -797,7 +813,7 @@ export default function TaxPromotionPage() {
                   </button>
                 ))}
               </div>
-              <button 
+              <button
                 onClick={() => setIsMenuOpen(false)}
                 className="w-full py-3 bg-gray-100 text-gray-800 font-medium rounded-lg"
               >
@@ -807,7 +823,7 @@ export default function TaxPromotionPage() {
           </motion.div>
         )}
       </header>
-      
+
       {/* 悬浮目录按钮 */}
       <AnimatePresence>
         {showFloatToc && (
@@ -824,7 +840,7 @@ export default function TaxPromotionPage() {
         )}
       </AnimatePresence>
 
-       {/* 主要内容区域 - 微信公众号风格 */}
+      {/* 主要内容区域 - 微信公众号风格 */}
       <main className="pt-20 pb-8 bg-white max-w-3xl mx-auto transition-colors duration-300">
         {/* 文章标题区域 - 微信公众号风格 */}
         <div className="px-4 mb-6">
@@ -838,7 +854,7 @@ export default function TaxPromotionPage() {
           </div>
           <div className="w-full h-1 bg-gray-100"></div>
         </div>
-        
+
         {/* 封面部分 */}
         <section
           id="cover"
@@ -849,11 +865,11 @@ export default function TaxPromotionPage() {
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/5 rounded-full"></div>
             <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-white/5 rounded-full"></div>
           </div>
-          
+
           <div className="h-full flex items-center justify-center relative z-10 px-4 py-12">
             {sections.find((s) => s.id === 'cover')?.content}
           </div>
-          
+
           {/* 向下滚动按钮 */}
           <motion.button
             onClick={() => scrollToSection('content')}
@@ -864,7 +880,7 @@ export default function TaxPromotionPage() {
             <i className="fas fa-chevron-down text-2xl"></i>
           </motion.button>
         </section>
-        
+
         {/* 其他内容部分 - 优化为微信公众号文章风格 */}
         {sections.slice(1).map((section) => (
           <section
@@ -877,15 +893,15 @@ export default function TaxPromotionPage() {
             </div>
           </section>
         ))}
-        
+
         {/* 文章分割线 */}
         <div className="w-full h-px bg-gray-100 my-8 mx-4"></div>
-        
+
         {/* 文章底部 - 微信公众号风格 */}
         <div className="px-4 py-6">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-2">
-              <motion.button 
+              <motion.button
                 whileTap={{ scale: 0.9 }}
                 className="flex items-center justify-center px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium"
                 onClick={() => {
@@ -895,7 +911,7 @@ export default function TaxPromotionPage() {
                 <i className="fas fa-thumbs-up mr-1"></i>
                 <span>点赞</span>
               </motion.button>
-              <motion.button 
+              {/* <motion.button
                 whileTap={{ scale: 0.9 }}
                 className="flex items-center justify-center px-4 py-2 bg-gray-50 text-gray-600 rounded-full text-sm font-medium"
                 onClick={() => {
@@ -904,9 +920,9 @@ export default function TaxPromotionPage() {
               >
                 <i className="fas fa-comment mr-1"></i>
                 <span>评论</span>
-              </motion.button>
+              </motion.button> */}
             </div>
-            <motion.button 
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow-sm"
@@ -929,9 +945,9 @@ export default function TaxPromotionPage() {
             >
               <i className="fas fa-share-alt mr-1"></i>
               <span>分享</span>
-            </motion.button>
+            </motion.button> */}
           </div>
-          
+
           {/* 作者信息卡片 */}
           <div className="bg-gray-50 p-5 rounded-xl mb-6">
             <div className="flex items-center">
@@ -939,21 +955,21 @@ export default function TaxPromotionPage() {
                 <i className="fas fa-landmark text-blue-600 text-xl"></i>
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-gray-900">国家税务总局临城县税务局</h3>
+                <h3 className="font-semibold text-gray-900">系列情景剧</h3>
                 <p className="text-sm text-gray-500">创新普法形式 提升执法水平</p>
               </div>
-              <motion.button 
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-4 py-1.5 bg-blue-600 text-white rounded-full text-xs font-medium shadow-sm"
               >
                 关注
-              </motion.button>
+              </motion.button> */}
             </div>
           </div>
-          
+
           {/* 推荐阅读 */}
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4 pb-2 border-b border-gray-100">推荐阅读</h3>
             <div className="space-y-4">
               {[
@@ -961,7 +977,7 @@ export default function TaxPromotionPage() {
                 { title: "基层税务干部培训新模式研究", readCount: "6,321" },
                 { title: "税收普法工作的创新与发展", readCount: "9,874" }
               ].map((item, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg transition-colors"
                   whileHover={{ x: 4 }}
@@ -976,21 +992,20 @@ export default function TaxPromotionPage() {
                 </motion.div>
               ))}
             </div>
-          </div>
-          
+          </div> */}
+
           {/* 版权信息 */}
-          <footer className="text-center text-gray-500 text-xs py-4 border-t border-gray-100">
+          {/* <footer className="text-center text-gray-500 text-xs py-4 border-t border-gray-100">
             <p>© {new Date().getFullYear()} 国家税务总局临城县税务局 版权所有</p>
             <p className="mt-1">转载请注明来源</p>
-          </footer>
+          </footer> */}
         </div>
       </main>
 
       {/* 返回顶部按钮 - 微信风格 */}
       <motion.button
-        className={`fixed bottom-6 right-6 w-12 h-12 bg-white text-blue-600 border border-blue-600 rounded-full flex items-center justify-center shadow-md z-40 ${
-          showBackToTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
+        className={`fixed bottom-6 right-6 w-12 h-12 bg-white text-blue-600 border border-blue-600 rounded-full flex items-center justify-center shadow-md z-40 ${showBackToTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
         onClick={scrollToTop}
         initial={{ scale: 0.8 }}
         animate={{ scale: showBackToTop ? 1 : 0.8 }}
